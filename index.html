@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>个人记账本</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h1>个人记账本</h1>
+
+<div class="amount">
+  <input id="price" type="text" inputmode="decimal" placeholder="0.00">
+</div>
+
+<button class="primary" onclick="add()">添加记录</button>
+
+<div class="card">
+  <select id="type" class="selector">
+    <option value="out">支出</option>
+    <option value="in">收入</option>
+  </select>
+
+  <select id="category" class="selector">
+    <option value="超市">超市</option>
+    <option value="餐馆">餐馆</option>
+    <option value="网购">网购</option>
+    <option value="午饭">午饭</option>
+    <option value="电费">电费</option>
+    <option value="网费">网费</option>
+    <option value="房贷">房贷</option>
+    <option value="保险">保险</option>
+    <option value="宠物">宠物</option>
+    <option value="旅行">旅行</option>
+    <option value="其他">其他</option>
+  </select>
+
+  <input id="note" class="note" placeholder="备注（可选）">
+  <button class="secondary" onclick="exportCSV()">导出CSV</button>
+</div>
+
+<div class="card">
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-title">收入</div>
+      <div id="income" class="stat-value income">0.00</div>
+    </div>
+    <div class="stat">
+      <div class="stat-title">支出</div>
+      <div id="expense" class="stat-value expense">0.00</div>
+    </div>
+    <div class="stat">
+      <div class="stat-title">结余</div>
+      <div id="balance" class="stat-value">0.00</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="chart"><canvas id="trend"></canvas></div>
+</div>
+
+<div class="card">
+  <div class="chart"><canvas id="pie"></canvas></div>
+</div>
+
+<div id="records"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
