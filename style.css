@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC",sans-serif
+}
+
+body{
+  background:#F5F7FA;
+  color:#1D1D1F
+}
+
+.container{
+  max-width:480px;
+  margin:auto;
+  padding:20px;
+  padding-bottom:80px
+}
+
+h1{
+  text-align:center;
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:20px
+}
+
+.card{
+  background:white;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:16px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.03)
+}
+
+.amount{
+  background:#F0FBF9;
+  border:2px solid #A7F3E7;
+  text-align:center;
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:15px
+}
+
+.amount input{
+  font-size:48px;
+  border:none;
+  outline:none;
+  text-align:center;
+  background:transparent;
+  color:#00A395;
+  width:100%;
+  font-weight:700
+}
+
+button{
+  border:none;
+  border-radius:14px;
+  padding:16px;
+  font-size:16px;
+  font-weight:600;
+  width:100%;
+  margin-bottom:10px
+}
+
+.primary{
+  background:#00A395;
+  color:white
+}
+
+.secondary{
+  background:#F2F4F5
+}
+
+.selector,input.note{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #E5E7EB;
+  margin-bottom:10px;
+  font-size:15px
+}
+
+.stats{
+  display:flex;
+  justify-content:space-between;
+  text-align:center
+}
+
+.stat{flex:1}
+
+.stat-title{
+  font-size:12px;
+  color:#888
+}
+
+.stat-value{
+  font-size:20px;
+  font-weight:700
+}
+
+.income{color:#34C759}
+.expense{color:#FF3B30}
+
+.chart{
+  height:220px;
+  margin-top:10px
+}
+
+.record{
+  display:flex;
+  justify-content:space-between;
+  padding:14px 0;
+  border-bottom:1px solid #F2F4F5
+}
+
+.meta{
+  font-size:12px;
+  color:#888
+}
+
+.del{
+  color:#aaa;
+  font-size:14px;
+  margin-left:10px;
+  cursor:pointer
+}
+
+.month{
+  font-weight:700;
+  margin-top:20px;
+  margin-bottom:10px;
+  color:#666
+}
